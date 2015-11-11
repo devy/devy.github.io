@@ -1,0 +1,16 @@
+:root {
+    --mainColor: teal;
+}
+
+a {
+    color: var(--mainColor);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    color: var(--mainColor);
+}
