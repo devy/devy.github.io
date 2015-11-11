@@ -20,9 +20,9 @@ gulp.task("css", function() {
         })
     ];
 
-    return gulp.src('./htdocs/assets/css/main.css')
+    return gulp.src('./assets/css/main.css')
         .pipe(postcss(processors))
-        .pipe(gulp.dest('./htdocs'))
+        .pipe(gulp.dest('./'))
         .pipe(livereload());
 });
 
@@ -30,7 +30,7 @@ gulp.task('watch', function() {
     livereload.listen();
     gulp.watch(
         [
-            './htdocs/assets/css/**/*.css',
-            './htdocs/**/*.html'
+            './assets/css/**/*.css',
+            './**/*.html'
         ], ['css']);
 });
