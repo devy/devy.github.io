@@ -26,7 +26,7 @@ gulp.task('css', function() {
         .pipe(livereload());
 });
 
-gulp.task('watch', function() {
+gulp.task('watch', function({ basePath: 'dist' }) {
     livereload.listen();
     gulp.watch(
         [
