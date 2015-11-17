@@ -9,7 +9,7 @@ var gulp = require('gulp'),
  * This defines the `css` task to be ran later.
  * Individual use: `gulp css`
  */
-gulp.task("css", function() {
+gulp.task('css', function() {
     var processors = [
         cssnext({
             'customProperties': true,
@@ -21,8 +21,8 @@ gulp.task("css", function() {
     ];
 
     return gulp.src('./assets/css/main.css')
-        .pipe(postcss(processors))
-        .pipe(gulp.dest('./'))
+        .pipe(postcss(cssnext))
+        .pipe(gulp.dest('dist/styles))
         .pipe(livereload());
 });
 
