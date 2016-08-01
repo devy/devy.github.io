@@ -1,0 +1,26 @@
+{
+  "name": "devy.github.io",
+  "version": "1.0.0",
+  "description": "A development playground for Devy",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devy/devy.github.io.git"
+  },
+  "author": "Josh Hall",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devy/devy.github.io.git"
+  },
+  "homepage": "http://devy.me",
+  "devDependencies": {
+    "cssnext": "^1.8.4",
+    "gulp": "^3.9.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-postcss": "^6.0.1",
+    "gulp-watch": "^4.3.5",
+    "postcss": "^5.0.11"
+  }
+}
